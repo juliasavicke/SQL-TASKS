@@ -1,0 +1,4 @@
+SELECT
+	EMPLID, GROUP_CONCAT(DISTINCT EMP_RCD SEPARATOR ', ') as Records
+FROM job
+group by emplid
